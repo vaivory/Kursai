@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registracijos forma
+    </title>
+</head>
+
+<body>
+    <h1>
+        Register
+    </h1>
+
+    <form>
+        <label for="vardas">
+            <div>Vardas*</div>
+            <input name="vardas" type="text" required>
+        </label>
+        <label for="pavarde">
+            <div>Pavarde*</div>
+            <input name="pavarde" type="text" required>
+        </label>
+        <label for="email">
+            <div>E-mail</div>
+            <input name="email" type="email">
+        </label>
+        <h4>Description</h4>
+        <textarea maxlength="100" required></textarea>
+        <label for="gender">
+            <br>Your Gender
+
+            <input name="gender" type="radio">
+            Moterys
+            <input name="gender" type="radio">
+            Vyras
+
+        </label>
+        <label for="birth">
+            <br>Date of Birth*
+            <input name="gender" type="date" required>
+        </label>
+        <label for="city">
+            <br>
+            <br>Is kokio miesto tu esi?
+            <select name="city">
+                <option value="Liutas">Vilnius</option>
+                <option selected value="Katinas">Kaunas</option>
+                <option value="Suo">Traikai</option>
+                <option value="Tigras">Telsiai</option>
+                <option value="Dramblys">Palanga</option>
+            </select>
+        </label>
+        <label for="adres">
+            <div>Jusu adressas:</div> Gatves pavadininmas, namo numeris ir butas
+            <input name="adres" type="text">
+            <div>Pasto indeksas</div>
+            <input name="adres" type="number" placeholder="be tarpo" maxlength="5">
+        </label>
+        <label for="birth">
+            <br>Subscribe to newsletter
+            <input name="gender" type="checkbox">
+        </label>
+        <div>
+            <input type="reset">
+        </div>
+        <div>
+            <button type="submit" onclick="document.location='./congrat.html'">Registruoti</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
