@@ -1,0 +1,18 @@
+table {
+    border: 4px solid black;
+    }
+.red {
+    width:100px; height: 100px; background-color: red; border:4px solid;
+}
+.blue{
+    width:100px; height: 100px; background-color: blue;
+}
+.green{
+    width:100px; height: 100px; background-color: green;
+}
+.grey{
+    width:100px; height: 100px; background-color: grey; border:4px solid;
+}
+.yellow{
+    width:100px; height: 100px; background-color: yellow; border:4px solid;
+}
