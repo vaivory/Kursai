@@ -1,0 +1,21 @@
+div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+   display: inline-block;
+  margin-right: -4px; /* panaikina tarpus is desnes kai darom blokini elementa kaip inline, nes inline tas tarpelis visada yra */
+   background: red;
+
+}
+span {
+    display: block; 
+    background: yellow;
+    padding: 10px;
+    margin: 50px;
+}
+.parent {
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+

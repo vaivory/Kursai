@@ -1,0 +1,152 @@
+/* Pirma uzduotis */
+.kubas, .staciakampis {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    background: #f33;
+    margin-bottom: 6px;
+}
+
+.staciakampis {
+    width: 90px;
+}
+
+/*  */
+
+/* Antra uzduotis */
+
+.kubas div {
+    color: green;
+}
+
+.kubas span {
+    color: blue;
+}
+/*  */
+
+/* Trecia uzduotis */
+a:visited {
+    color: red;
+}
+
+input[type=text] {
+    background: yellow;
+}
+
+input[type=number] {
+    background: green;
+}
+
+input[type=email] {
+    background: red;
+}
+
+/* Bonus: daznai naudojama pseudo klase */
+button {
+    margin-top: 12px;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+
+/*  */
+
+/* Ketvirta uzduotis */
+
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+ td {
+    padding: 4px 8px;
+    border: 1px solid #333;
+}
+
+td:nth-of-type(odd) {
+    background: red;
+}
+
+td:nth-of-type(even) {
+    background: blue;
+}
+
+tr:nth-of-type(even) td:nth-of-type(even) {
+    background: yellow;
+}
+
+.element {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    background: violet;
+    position: relative;
+}
+
+.element::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: blue;
+}
+
+.parent {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: relative;
+    left: 50px;
+}
+
+.child {
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    background: violet;
+    position: relative;
+}
+
+.grandchild {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fixed {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: cyan;
+    bottom: 0;
+    right: 0;
+}
+
+ /* Sesta uzduotis */
+
+.container {
+    margin-top: 20px;
+    width: 262px;
+    height: 262px;
+    background: red;
+    position: relative;
+}
+
+.cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 82px;
+    height: 82px;
+    background: blueviolet;
+}
+
+/*  */

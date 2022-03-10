@@ -1,0 +1,75 @@
+.kubas, .staciakampis{
+width: 50px;
+height: 50px;
+background: red;
+margin-bottom: 20px;
+border: 2px solid black;
+}
+
+.staciakampis {
+width: 70px;
+}
+.cube1 {
+    color: blue;
+}
+.cube2{
+    color: green;
+}
+
+/* .kubas .melyna {
+    color="green"
+} */
+
+input[type="text"] {
+    background: yellow;
+}
+
+/* kai tarkim nueinam i linka ir poto jis keicia spalva kad mes jau ten buvom*/
+/*turetu panaikinti ta spalvos keitima*/
+
+a:visited {
+    color: initial;
+}
+
+/*inputas yra raudonas kol neivedam emailo*/
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input[type="number"] {
+    background: green;
+}
+
+input[type="email"] {
+    background: red;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+table {
+    margin-top: px;
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(2n){
+    background: blue;
+} /*kas antra eilute lenteleje nudazo melynai*/
+
+tr:not(:nth-of-type(2n)) {
+    background: yellow;
+}
+
+tr:nth-of-type(4){
+    background: purple;
+} /*butent 4 eilute nudazo*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+td {
+    padding: 5px 5px;
+    border: 1px solid black;
+}
+
+td:nth-of-type(2n) {
+    background: yellow;
+}
+td:nth-of-type(2n-1) {
+    background: green;
+}
+
+tr:nth-of-type(even) td:nth-of-type(even) {
+    background: red;
+} /*per tarpeli einam i vidu tai tr ir poto eina mi vidu i td*/
+/*po tevo paima vaikus*/
+
+.element {
+width: 50px;
+margin-top: 20px;
+height: 50px;
+background: violet;
+position: relative;
+}/**/
+
+.element::after {
+    content: '';
+    position: absolute; 
+    width: 20px;
+    height: 20px;
+    background: blue;
+    top: 0;
+    left: 0;
+}/*daznai content paliekamas tuscias ir mes norim sitam elemente turet zenkliuka*/
+/*viduj elemento sukurem dar kazkoki lemeneta*/
+
+/*.container {
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin-top: 20px;
+}
+.cube {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: peru;
+}*/
+
+.container {
+    width: 200px;
+    height: 200px;
+    background: green;
+    margin-top: 20px;
+    position: relative;
+}
+.cube {
+    position: absolute;
+    right: 50px; /*top: 25%*/
+    bottom: 20px; /*left: 25%*/
+    width: 40px; /*transform: translateX(-50%, -50%)*/
+    height: 40px;
+    background: peru;
+
+}
