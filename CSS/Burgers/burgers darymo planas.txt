@@ -6,3 +6,19 @@ header turi dvi dalis
  is kaires logo
 
  is desnes container express ir nuorodos
+
+ antra dalis:
+ <section> elementas
+ section tures background
+ 2 vaikai bus section elemento desne ir kaire
+ 
+ #kaire puse:
+ div su tekstu ir dashed borderiu
+burger H2
+week h4
+
+#desne puse:
+img
+ant img yra kainos elementas
+
+Kaina: bus du conteinerar ckasss circle ir class price

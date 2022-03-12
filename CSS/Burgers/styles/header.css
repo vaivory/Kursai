@@ -5,16 +5,11 @@ font-family: 'Montserrat', sans-serif;
 */
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*sudeda i veina eiles elementus*/
+    justify-content: space-between; /*ismeta elemtus skirtinguose pusese*/
     padding: 50px 56px; /*elemto dalis ir pastumia viska is virsau ir apacios 50 ir is kaires ir desnes 58*/
-    background: yellow;
     color: #3d2514;
     
-    
-}
-
-.logo {
     
 }
 
@@ -28,30 +23,31 @@ header div img{
    margin-bottom: 26px;
 }
 
-a {
+.right-side nav a {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     letter-spacing: 4px;
     color: #3d2514;
-    padding: 0px 24px;
+    margin: 0px 24px;
 }
 
 .container-express div {
-    font-weight: bold;
+    font-weight: bold; /*abra galima nurodyti 700 t.y. tas pats*/
  
 }
+
 header div:nth-of-type(2){
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
           
 }
-nav a:first-child{
-   /* padding-right: 26px;*/
-    padding-left: 0px;
+
+.right-side nav a:first-child{
+       margin-left: 0px;
 }
-nav a:last-child{
-   /* padding-left: 26px;*/
-    padding-right: 0px;
+
+.right-side nav a:last-child{
+       margin-right: 0px;
 }
 
 
