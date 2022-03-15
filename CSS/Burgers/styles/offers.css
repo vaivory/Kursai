@@ -1,0 +1,45 @@
+.offers {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 34px;
+    margin: 80px 100px;
+    ;
+  /*  position: relative;*/
+    color: red;
+
+}
+
+.burger-right, .burger-left {
+    position: relative;
+}
+
+.burger-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.burger-left img:first-child {
+    margin-bottom: 34px;
+}
+
+
+.text-on {
+    position: absolute;
+    top: 30px;
+    left: 24px;
+
+}
+
+.offers h2{
+    font-size: 30px;
+
+  
+}
+
+.offers h4{
+    font-size: 20px;
+    
+}
+
+

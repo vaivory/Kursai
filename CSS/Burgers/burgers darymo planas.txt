@@ -22,3 +22,7 @@ img
 ant img yra kainos elementas
 
 Kaina: bus du conteinerar ckasss circle ir class price
+
+#trecia dalis 3
+section
+darysim vel desne ir kaire

@@ -50,18 +50,26 @@ margin-bottom: 26px;
     
 }
 
- 
+.sec-right img {
+    position: relative;
+    z-index: 1;
+}
 
 .glow {
-   /* -webkit-mask-image: linear-gradient(black, transparent);
-    mask-image: linear-gradient(black, transparent);   */
-    /*border: 1px solid;
-    box-shadow: 0px 10px 5px pink inset; */
+    z-index: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: 0px -60px 160px 216px #ffda92;
 } 
 
 
 .circle {
     position: absolute;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +88,7 @@ margin-bottom: 26px;
     height: 150px;
     width: 150px;
     color: white;
-    border: 4px dashed white;
+    border: 2px dashed white;
     padding: 28px;
     
 }
