@@ -1,0 +1,70 @@
+.container-foot {
+    width: 1440px;
+    height: 526px;
+    margin: auto;
+    margin-bottom: 66px;
+    color: white;
+    background-image: url(../src/assets/footerbackground.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.left-foot {
+    font-family: "Montserrat";
+    padding-top: 80px;
+    padding-left: 40px;
+    position: relative;
+
+}
+
+.copyright {
+    font-family: "Bebas Neue";
+    font-size: 18px; 
+    position: absolute;
+    letter-spacing: 1px;
+}
+
+.left-foot p {
+    font-family: "Montserrat";
+    width: 520px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 46px;
+}
+
+.right-foot {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+  }
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fott-rigt-pos {
+    position: relative;
+}
+
+.right-foot nav {
+    position: absolute;
+}

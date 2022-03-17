@@ -1,0 +1,41 @@
+.sec-threeburgers {
+    max-width: 1440px;
+    margin: 0 auto 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.threeburgers {
+    flex: 0 0 350px; /*sitas visada yra uzdedamas ant vaiku*/
+}
+
+.threeburgers img {
+    max-width: 100%;
+    margin-bottom: 22px;
+}
+
+.threeburgers h2 {
+    font-family: "Bebas Neue";
+    font-size: 38px;
+    color: #3d2514;
+    margin-bottom: 26px;
+}
+
+.threeburgers p {
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #3d2514;
+    margin-bottom: 40px;
+
+}
+
+.threeburgers button {
+    background-color:  #bf2222;
+    color: white;
+    font-family: "Alfa Slab One";
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 22px 36px 20px 36px;
+}

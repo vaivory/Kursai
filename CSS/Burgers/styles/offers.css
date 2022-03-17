@@ -1,12 +1,13 @@
 .offers {
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     font-family: 'Bebas Neue', cursive;
     line-height: 34px;
-    margin: 80px 100px;
+    margin: 80px auto;
     ;
-  /*  position: relative;*/
-    color: red;
+   /* position: relative; */
+    color: white;
 
 }
 
@@ -14,18 +15,18 @@
     position: relative;
 }
 
-.burger-left {
+.burger-right {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.burger-left img:first-child {
-    margin-bottom: 34px;
+.lygiavimas {
+   position: relative;
 }
-
 
 .text-on {
-    position: absolute;
+   position: absolute;
     top: 30px;
     left: 24px;
 

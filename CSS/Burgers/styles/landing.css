@@ -1,4 +1,4 @@
-section {
+.landing {
     background: url(../src/assets/Rectangle.png);
     display: flex;
    justify-content: space-between;
@@ -14,8 +14,8 @@ section {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-color: #3d2514;
-margin-bottom: 26px;
+    color: #3d2514;
+    margin-bottom: 26px;
 }
 
 .headings span{
@@ -34,7 +34,6 @@ margin-bottom: 26px;
 
 .headings span:nth-of-type(2) {
     font-size: 114px;
-    
 }
 
 .sec-left .headings span {
