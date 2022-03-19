@@ -1,0 +1,83 @@
+.reservation {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.reservation h1 {
+    font-size: 30px;
+letter-spacing: 2px;
+color: #3d2514;
+font-family: "Bebas Neue";
+margin-bottom: 24px;
+
+}
+
+.reservation h3 {
+    font-size: 50px;
+letter-spacing: 3px;
+color: #3d2514;
+font-family: "Alfa Slab One";
+margin-bottom: 80px;
+
+}
+
+.reservation .input-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.reservation button {
+    background-color: red;
+    font-size: 20px;
+color: #ffffff;
+font-family: "Alfa Slab One";
+text-transform: uppercase;
+height: 64px;
+flex: 0 0 calc(50% - 24px);
+margin: 23px 9px;
+    border-radius: 5px;
+}
+
+.reservation input {
+    text-transform: uppercase;
+    outline: none;
+    margin: 24px 12px;
+    border-radius: 5px;
+    height: 64px;
+    flex: 0 0 calc(50% - 24px); /*neauga neissiplecia uzima 50% musu konteinerio ir atimam arkarpa kuria poto pridedam su paddingu*/
+    padding: 0 24px;
+    
+
+}
+
+.reservation input::placeholder {
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+.reservation form{
+    width: 800px; /*musu formos dydis*/
+    margin: 20px auto; /*iscentruoja forma*/
+    
+}
+
+.reservation img:first-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: drop-shadow(20px 20px 26px #333);
+    z-index: -1;
+}
+
+.reservation img:last-child {
+    position: absolute;
+    right: -150px;
+    bottom: 20px;
+    filter: drop-shadow(41px 29px 26px #333);
+    z-index: -1;
+}

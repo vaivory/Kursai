@@ -9,7 +9,9 @@ header {
     justify-content: space-between; /*ismeta elemtus skirtinguose pusese*/
     padding: 50px 56px; /*elemto dalis ir pastumia viska is virsau ir apacios 50 ir is kaires ir desnes 58*/
     color: #3d2514;
-    
+    max-width: 1440px;
+    margin: auto;
+    background: url(../src/assets/Rectangle.png);
     
 }
 

@@ -1,70 +1,85 @@
-.container-foot {
-    width: 1440px;
-    height: 526px;
-    margin: auto;
-    margin-bottom: 66px;
-    color: white;
-    background-image: url(../src/assets/footerbackground.svg);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.left-foot {
-    font-family: "Montserrat";
-    padding-top: 80px;
-    padding-left: 40px;
+footer {
     position: relative;
-
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 80px;
+    color: white;
+    
 }
 
-.copyright {
+.top-foot {
+    font-family: "Montserrat";
+    top: 60px;
+    left: 20px;
+    padding: 26px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .top-foot .logo-wrapper {
+    flex: 0 0 100%;
+    margin-bottom: 46px;
+
+}
+footer small {
     font-family: "Bebas Neue";
     font-size: 18px; 
     position: absolute;
     letter-spacing: 1px;
 }
 
-.left-foot p {
+.top-foot p {
     font-family: "Montserrat";
     width: 520px;
     font-size: 18px;
     line-height: 25px;
-    margin-top: 46px;
+    
 }
 
-.right-foot {
+footer .top-foot div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*.right-foot {
     font-family: "Bebas Neue";
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 2px;
+    position: relative;
     
-}
+}*/
 
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 22px;
-    height: 22px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    background: white;
-    color: black;
-  }
-
-
-.fa:hover {
+.social:hover {
     opacity: 0.7;
 }
 
-.fott-rigt-pos {
-    position: relative;
+.social {
+    display: flex;
+    }
+
+.contacts img{
+ margin-right: 30px;
 }
 
-.right-foot nav {
-    position: absolute;
+footer .contacts {
+    margin-bottom: 18px;
+    font-size: 21px;
+    line-height: 38px;
+    font-weight: bold;
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    margin-left: 20px;
 }
+
+
+footer .bottom-foot {
+    bottom: 24px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+}
+
