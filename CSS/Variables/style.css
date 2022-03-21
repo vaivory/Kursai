@@ -1,0 +1,45 @@
+/* cia kaip visada nurodom savo klases ir stylius 
+    ir panaudojam kintamuosius*/
+
+.cube{
+    
+    width: 50px;
+    height: 50px;
+    margin: var(--margin-xs);
+    margin-top: 100px;
+    box-shadow: var(--brand-shadow);
+    background: var(--primary);
+}
+
+/*.f-c-c /*flex kuri iscentruojam centre*/
+
+.su-margin {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    margin: 24px;
+}
+
+.margin-0 { /*numusa mum margina kuris buvo nurodytas pries tai*/
+    margin: 0;
+}
+
+.registration-form__button {
+    /**cia eina default styliius*/
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+
+}
+
+.registration-form__button--red {
+    background: red;
+
+}
+
+.registration-form__button--green {
+    background: green;
+
+}
+
