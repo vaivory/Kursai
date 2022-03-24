@@ -1,0 +1,53 @@
+$spalva: green;
+/*nurodom kintamaji scss'e*/
+
+@mixin cube($dimensions: 100px) {
+    width: $dimensions;
+    height: $dimensions;
+}
+
+%border {
+    /*extension*/
+    border: 5px solid black;
+}
+
+div {
+    @include cube;
+    background: $spalva;
+
+    /*panaudojam kintamaja scss'e*/
+    div {
+        @include cube(75px);
+        background: red;
+
+        div {
+            @include cube(50px);
+            @extend %border;
+            background: blue;
+        }
+    }
+}
+
+@mixin flex-layout ($horizontal:center, $vertical:center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+
+
+.flex1 {
+    @include flex-layout();
+    width: 150px;
+    height: 200px;
+    color: white;
+    background: brown;
+}
+
+.flex2 {
+    @include flex-layout(flex-end, flex-end);
+    width: 200px;
+    height: 150px;
+    color: blue;
+    background: yellow;
+}

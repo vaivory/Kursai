@@ -1,0 +1,13 @@
+:root { /*cia nurodom visus ssavo kintamuosius*/
+    --primary: blue;
+    --background: orange;
+    --brand-shadow: 5px 5px 15px 5px #000000;
+    --margin-xs: 12px;
+        
+}
+
+body {
+    background: var(--background);
+    
+}
+

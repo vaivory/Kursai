@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+
+[class ^="box-"] {
+    display: grid;
+    place-items: center;
+    border: 3px solid red;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:  /*cia iseina kad tevynis elementas todel rasosi su zodziu template*/
+    "header header header header"
+    "box-a box-a box-a box-a"
+    "box-b box-b box-b box-b"
+    "box-c box-c box-c box-c"
+    "box-d box-d box-d box-d"
+    "footer footer footer footer";
+    grid-gap: 10px;
+}
+
+@media (min-width: 768px){
+    body {  grid-template-areas:  /*cia iseina kad tevynis elementas todel rasosi su zodziu template*/
+    "header header header header"
+    "box-a box-b box-b box-b"
+    "box-a box-c box-c box-c"
+    "box-a box-d box-d box-d"
+    "footer footer footer footer";}
+}
+
+@media (min-width:1024px){
+   body { grid-template-areas:  /*cia iseina kad tevynis elementas todel rasosi su zodziu template*/
+    "header header header header"
+    "box-a box-b box-b box-d"
+    "box-a box-c box-c box-d"
+    "box-a box-c box-c box-d"
+    "footer footer footer footer";  }
+}
+/*toliau isvardinam vaikus jau eina be zodzio template*/
+.box-1 {
+    grid-area: header;
+}
+
+.box-2 {
+    grid-area: box-a;
+}
+
+.box-3 {
+    grid-area: box-b;
+}
+
+.box-4 {
+    grid-area: box-c;
+}
+
+.box-5 {
+    grid-area: box-d;
+}
+
+.box-6 {
+    grid-area: footer;
+}

@@ -1,0 +1,30 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {background-color: white;
+border: 0px;
+}
+
+nav {
+    display: none;
+      
+}
+
+button:focus nav {
+    display: flex;
+    
+    
+}
+
+@media (min-width: 365px){
+    nav {
+        display: flex; 
+                 }
+        ul {display: flex;} /*rodo eilute*/
+    svg {
+        display: none;
+        } 
+    }
+
+

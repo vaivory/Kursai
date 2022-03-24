@@ -1,0 +1,20 @@
+div {
+    width: 150px;
+    height: 150px;
+    margin: 12px;
+    background: red; /*ekranas nuo 0 iki 768px bur raudona spalva*/
+}
+
+@media (min-width: 768px){
+div {
+    background: green; /*ekranas nuo 768 iki 1023 bur zalias*/
+}
+}
+@media (min-width: 1024px){
+div {
+    background: yellow; /*ekranas nuo 1024 ir daugiau bus geltonas*/
+}
+}
+
+
+
