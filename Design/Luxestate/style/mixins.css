@@ -1,0 +1,12 @@
+/*
+@mixin menu-gelt-mygt($dimensions, $dimensions) {
+    width: $dimensions;
+    height: $dimensions;
+    border-radius: 5px;
+    background-color: #ffcc01;
+}
+
+buttom {
+    @include menu-gelt-mygt(144px 40px);
+}*/
+/*# sourceMappingURL=mixins.css.map */

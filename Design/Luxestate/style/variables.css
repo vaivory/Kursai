@@ -1,0 +1,18 @@
+:root {
+    --textospalva: #1f373d;
+    --textosriftas: "Montserrat";
+}
+
+body {
+    color: var(--textospalva);
+    font-family: var(--textosriftas);
+    margin-left: 408px;
+    margin-right: 346px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #1f373d;
+}
+
