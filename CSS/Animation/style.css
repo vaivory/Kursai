@@ -1,0 +1,48 @@
+.loading {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  -webkit-animation-name: loading-krauna;
+          animation-name: loading-krauna;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes loading-krauna {
+  0% {
+    width: 100px;
+  }
+  25% {
+    width: 200px;
+  }
+  50% {
+    width: 300px;
+  }
+  75% {
+    width: 400px;
+  }
+  100% {
+    width: 500px;
+  }
+}
+
+@keyframes loading-krauna {
+  0% {
+    width: 100px;
+  }
+  25% {
+    width: 200px;
+  }
+  50% {
+    width: 300px;
+  }
+  75% {
+    width: 400px;
+  }
+  100% {
+    width: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
