@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAC,CACH,QAAQ,CAAE,QAAQ,CACrB,AAED,AAEI,SAFK,CAEL,IAAI,AAAC,CACD,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,MAAM,CACX,IAAI,CAAE,MAAM,CACZ,UAAU,CAAE,mCAAmC,CAClD,AAPL,AAUQ,SAVC,AASJ,MAAM,CACH,IAAI,AAAC,CACD,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CAEV",
+    "sources": [
+        "../../../CSS/Animation/menu.scss"
+    ],
+    "names": [],
+    "file": "menu.min.css"
+}

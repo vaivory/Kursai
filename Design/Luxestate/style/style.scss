@@ -3,15 +3,17 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
-/*@import './mixins.css'*/
+@import './mixins';
 
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 38px;
-    margin-bottom: 24px;
+    max-width: 1180px;
+    margin: auto;
+    margin-top: 36px;
+
 }
 
 .header-menu {
@@ -45,14 +47,13 @@ font-family: 'Roboto', sans-serif;
     padding-right: 34px;
 }
 
-.header-menu__buttom {
-    width: 144px;
-    height: 40px;
-}
+// .header-menu__button {
+//     padding: 15px 22px 14px;
+// }
 
-.header-menu__buttom--yellow {
-    background: #ffcc01;
-}
+// .header-menu__button--yellow {
+//     background: #ffcc01;
+// }
 
 @media (max-width: 768px) {
 

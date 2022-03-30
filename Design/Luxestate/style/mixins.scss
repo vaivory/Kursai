@@ -1,11 +1,9 @@
-/*
-@mixin menu-gelt-mygt($dimensions, $dimensions) {
-    width: $dimensions;
-    height: $dimensions;
+@mixin menu-gelt-mygt {
+
     border-radius: 5px;
     background-color: #ffcc01;
 }
 
-buttom {
-    @include menu-gelt-mygt(144px 40px);
-}*/
+button {
+    @include menu-gelt-mygt;
+}

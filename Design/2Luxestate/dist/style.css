@@ -1,0 +1,47 @@
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 18px;
+}
+
+.header-logo {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+.header__burger-menu {
+  width: 32px;
+  height: 32px;
+}
+
+.header-menu {
+  position: relative;
+  order: 1;
+}
+@media (max-width: 768px) {
+  .header-menu nav.header__navigation-links {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border: 1px solid #96bece;
+    border-radius: 5px;
+  }
+  .header-menu:focus nav.header__navigation-links, .header-menu:focus-within nav.header__navigation-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

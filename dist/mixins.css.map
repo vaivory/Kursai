@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAMA,AAAA,MAAM,CAAC;EAJH,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,OAAO;CAK5B",
     "sources": [
-        "mixins.scss"
+        "../Design/Luxestate/style/mixins.scss"
     ],
     "names": [],
     "file": "mixins.css"

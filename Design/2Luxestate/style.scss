@@ -1,0 +1,97 @@
+@import './theme';
+@import './mixin';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $text-color;
+}
+
+.header {
+    @include flex-layout(space-between, center);
+    padding: 26px 18px;
+
+
+}
+
+.header-logo {
+
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 600;
+
+}
+
+.header__burger-menu {
+    width: 32px;
+    height: 32px;
+
+}
+
+.header-menu {
+    position: relative;
+    order: 1;
+    text-align: center;
+
+    @media (max-width: $tablet) {
+        nav.header__navigation-links {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            border: 1px solid $secondary;
+            border-radius: $border-radius;
+
+        }
+
+        &:focus,
+        &:focus-within {
+            nav.header__navigation-links {
+                @include flex-layout;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.header__navigation-link {
+    width: 100%;
+    padding: 15px 16px 14px;
+    font-size: $text-size;
+    text-align: center;
+
+    &:hover {
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+@media (max-width: $desktop) {
+    .header-menu {
+        order: 1;
+    }
+
+    nav.header__navigation-links a:nth-child(-n+5) {
+        display: none;
+    }
+
+    nav.header__navigation-links a:last-child {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        border: 1px solid $secondary;
+        border-radius: $border-radius;
+    }
+
+    &:focus,
+    &:focus-within {
+        nav.header__navigation-links {
+            @include flex-layout;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    img.header__burger-menu {
+        display: none;
+    }
+
+}
