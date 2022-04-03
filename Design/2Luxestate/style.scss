@@ -10,7 +10,6 @@ body {
     @include flex-layout(space-between, center);
     padding: 26px 18px;
 
-
 }
 
 .header-logo {
@@ -27,10 +26,16 @@ body {
 
 }
 
+.header-menu__button {
+    background: $primary;
+}
+
+/*kaip headeris atrodys ant mobile*/
+
 .header-menu {
     position: relative;
     order: 1;
-    text-align: center;
+
 
     @media (max-width: $tablet) {
         nav.header__navigation-links {
@@ -40,7 +45,6 @@ body {
             right: 0;
             border: 1px solid $secondary;
             border-radius: $border-radius;
-
         }
 
         &:focus,
@@ -60,38 +64,235 @@ body {
     text-align: center;
 
     &:hover {
+        /*kai issiskleidzia meniu tuomet gaunam toki efekta, pabraukima*/
         border-bottom: 1px solid $border-color;
     }
 }
 
-@media (max-width: $desktop) {
+/*taip atrodys headeris ant tablet*/
+
+@media (min-width: $tablet) {
     .header-menu {
         order: 1;
+
+
+        nav.header__navigation-links a:nth-child(-n+5) {
+            display: none;
+        }
+
+        &:focus,
+        &:focus-within {
+            nav.header__navigation-links {
+                /*tevynis elementas, jei ji rodom tai vaikai nepasirodo, nes virsuj nurodem kad jie nesirodytu*/
+                @include flex-layout;
+                flex-direction: column;
+            }
+
+            nav.header__navigation-links a:nth-child(-n+5) {
+                /*todel ja ucia nurodom kad vaikas matytusi*/
+                display: block;
+
+            }
+        }
     }
 
-    nav.header__navigation-links a:nth-child(-n+5) {
-        display: none;
-    }
 
-    nav.header__navigation-links a:last-child {
-        position: absolute;
-        top: 40px;
-        right: 0;
-        border: 1px solid $secondary;
-        border-radius: $border-radius;
-    }
+}
 
-    &:focus,
-    &:focus-within {
+
+
+nav.header__navigation-links a:last-child {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border: 1px solid $secondary;
+    border-radius: $border-radius;
+}
+
+
+
+/*taip headeris atrodis ant desktopo*/
+
+.header-menu {
+    order: 0;
+    @media (min-width: $desktop) {
+        img {
+            display: none;
+        }
         nav.header__navigation-links {
             @include flex-layout;
+    }
+    nav.header__navigation-links a:nth-child(-n+5) {
+        /*todel ja ucia nurodom kad vaikas matytusi*/
+        display: block;
+}
+nav.header__navigation-links a:first-child {
+    padding-left: 0;
+}
+
+nav.header__navigation-links a:last-child {
+    padding-right: 0;
+}
+
+nav.header__navigation-links a:nth-child(5) {
+    padding-right: 34px;
+}
+}}
+
+//------------Headerio pabaiga-----------------
+
+//--------------Search sekcijos pradzia--------------
+
+.about {
+  
+    @include flex-layout;
+    flex-direction: column;
+    padding: 0 24px;
+   
+   
+    
+
+    @media (min-width: $desktop) {
+        @include flex-layout(space-between, flex-start);
+        flex-direction: row;
+        
+        
+    }
+
+.about__description {
+    h2 {
+        font-size: 30px;
+        letter-spacing: -2px;
+        line-height: 78px;}
+    @media (min-width: $tablet) {
+        
+        h2 {
+            font-size: 45px; 
         }
     }
 }
-
-@media (min-width: $desktop) {
-    img.header__burger-menu {
-        display: none;
+.about__description {
+    p {
+        font-size: 15px;
+        margin-bottom: 20px;
+        line-height: 30px;
+        @media (min-width: $tablet)  {
+            width: 70%
+        }
+        @media (min-width: $desktop) {
+           p {  font-size: 50 px;
+                margin-bottom: 42px; 
+                
+        }
+        }
+    }
+        
     }
 
+    .about__milestones {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 200px);
+        grid-gap: 14px;
+        
+            div {
+                font-size: 20px;
+                letter-spacing: -1px;
+                line-height: 50px;
+                color: #ffcc01;
+                @media (min-width: $desktop) {
+            
+                    font-size: 40px;
+                
+                }
+            }
+            span {
+                font-size: 14px;
+                letter-spacing: 0px;
+                line-height: 50px;
+                color: #1f373d;}
+
+        @media (min-width: $tablet) {
+                   grid-gap: 28px;
+        }
+       
+    .about__milestone {
+     
+            background-color: #96bece;
+            margin: 25px 25px 25px 25px;
+            line-height: 30px;
+            padding: 25px;
+     
+        
+    }
+           
+    }
 }
+
+//---------------Search section------------------------------
+
+.search {
+    .search__container {
+        position: relative;
+        .search__heading {
+            @include flex-layout;
+            display: block;
+            position: absolute;
+            
+            h1 {
+                font-size: 30px;
+                letter-spacing: -2px;
+                line-height: 78px;
+                font-weight: 600;
+                @media (min-width: $tablet) {
+                    font-size: 50px;
+                }
+            }
+
+            input {
+                padding: 18px 18px 17px;
+                border: none;
+                @media (min-width: $desktop) {
+                    padding: 30px 34px 28px;
+                }
+            }
+
+            button {
+                background: $primary;
+                padding: 18px 18px 16px;
+                font-weight: 500;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+                @media (min-width: $tablet) {
+                    padding: 18px 34px 16px;
+                }
+    
+                @media (min-width: $desktop) {
+                    padding: 30px 34px 28px;
+                }    
+            }
+        }
+        .search__background {
+            background-color: $secondary;
+            height: 50%;
+            width: 80%;
+            margin-left: auto;
+        }
+        .search__scroll-down {
+            @include flex-layout;
+            transform: rotate(-90deg);
+            position: absolute;
+            bottom: 54px;
+            left: -32px;
+            flex-direction: row-reverse;
+            div {
+                margin: 12px;
+            }
+            img {
+                transform: rotate(90deg);
+            }
+        }
+        
+    }
+}
+

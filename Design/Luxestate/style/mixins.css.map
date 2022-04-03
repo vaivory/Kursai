@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAMA,AAAA,MAAM,CAAC;EAJH,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,OAAO;CAK5B",
-    "sources": [
-        "mixins.scss"
-    ],
-    "names": [],
-    "file": "mixins.css"
-}
+{"version":3,"sourceRoot":"","sources":["mixins.scss"],"names":[],"mappings":"AAMA;EAJI;EACA","file":"mixins.css"}

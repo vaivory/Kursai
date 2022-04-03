@@ -8,23 +8,15 @@ button {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1180px;
   margin: auto;
   margin-top: 36px;
 }
 
 .header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -57,16 +49,15 @@ button {
   .header {
     position: relative;
   }
+
   .header-menu {
     visibility: hidden;
   }
+
   .header-logo:hover .header-menu {
     position: absolute;
     visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     top: 0;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -56,3 +56,5 @@ a {
 	text-decoration: none;
 	color: #1f373d;
 }
+
+* {font-family: inherit;}

@@ -1,0 +1,266 @@
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #1f373d;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 18px;
+}
+
+.header-logo {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+.header__burger-menu {
+  width: 32px;
+  height: 32px;
+}
+
+.header-menu__button {
+  background: #ffcc01;
+}
+
+/*kaip headeris atrodys ant mobile*/
+.header-menu {
+  position: relative;
+  order: 1;
+}
+@media (max-width: 768px) {
+  .header-menu nav.header__navigation-links {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border: 1px solid #96bece;
+    border-radius: 5px;
+  }
+  .header-menu:focus nav.header__navigation-links, .header-menu:focus-within nav.header__navigation-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.header__navigation-link {
+  width: 100%;
+  padding: 15px 16px 14px;
+  font-size: 13px;
+  text-align: center;
+}
+.header__navigation-link:hover {
+  /*kai issiskleidzia meniu tuomet gaunam toki efekta, pabraukima*/
+  border-bottom: 1px solid #1f373d;
+}
+
+/*taip atrodys headeris ant tablet*/
+@media (min-width: 768px) {
+  .header-menu {
+    order: 1;
+  }
+  .header-menu nav.header__navigation-links a:nth-child(-n+5) {
+    display: none;
+  }
+  .header-menu:focus nav.header__navigation-links, .header-menu:focus-within nav.header__navigation-links {
+    /*tevynis elementas, jei ji rodom tai vaikai nepasirodo, nes virsuj nurodem kad jie nesirodytu*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header-menu:focus nav.header__navigation-links a:nth-child(-n+5), .header-menu:focus-within nav.header__navigation-links a:nth-child(-n+5) {
+    /*todel ja ucia nurodom kad vaikas matytusi*/
+    display: block;
+  }
+}
+nav.header__navigation-links a:last-child {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  border: 1px solid #96bece;
+  border-radius: 5px;
+}
+
+/*taip headeris atrodis ant desktopo*/
+.header-menu {
+  order: 0;
+}
+@media (min-width: 1024px) {
+  .header-menu img {
+    display: none;
+  }
+  .header-menu nav.header__navigation-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-menu nav.header__navigation-links a:nth-child(-n+5) {
+    /*todel ja ucia nurodom kad vaikas matytusi*/
+    display: block;
+  }
+  .header-menu nav.header__navigation-links a:first-child {
+    padding-left: 0;
+  }
+  .header-menu nav.header__navigation-links a:last-child {
+    padding-right: 0;
+  }
+  .header-menu nav.header__navigation-links a:nth-child(5) {
+    padding-right: 34px;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 24px;
+}
+@media (min-width: 1024px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.about .about__description h2 {
+  font-size: 30px;
+  letter-spacing: -2px;
+  line-height: 78px;
+}
+@media (min-width: 768px) {
+  .about .about__description h2 {
+    font-size: 45px;
+  }
+}
+.about .about__description p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+@media (min-width: 768px) {
+  .about .about__description p {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .about .about__description p p {
+    font-size: 50 px;
+    margin-bottom: 42px;
+  }
+}
+.about .about__milestones {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 14px;
+}
+.about .about__milestones div {
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 50px;
+  color: #ffcc01;
+}
+@media (min-width: 1024px) {
+  .about .about__milestones div {
+    font-size: 40px;
+  }
+}
+.about .about__milestones span {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 50px;
+  color: #1f373d;
+}
+@media (min-width: 768px) {
+  .about .about__milestones {
+    grid-gap: 28px;
+  }
+}
+.about .about__milestones .about__milestone {
+  background-color: #96bece;
+  margin: 25px 25px 25px 25px;
+  line-height: 30px;
+  padding: 25px;
+}
+
+.search .search__container {
+  position: relative;
+}
+.search .search__container .search__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  position: absolute;
+}
+.search .search__container .search__heading h1 {
+  font-size: 30px;
+  letter-spacing: -2px;
+  line-height: 78px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .search .search__container .search__heading h1 {
+    font-size: 50px;
+  }
+}
+.search .search__container .search__heading input {
+  padding: 18px 18px 17px;
+  border: none;
+}
+@media (min-width: 1024px) {
+  .search .search__container .search__heading input {
+    padding: 30px 34px 28px;
+  }
+}
+.search .search__container .search__heading button {
+  background: #ffcc01;
+  padding: 18px 18px 16px;
+  font-weight: 500;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media (min-width: 768px) {
+  .search .search__container .search__heading button {
+    padding: 18px 34px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .search .search__container .search__heading button {
+    padding: 30px 34px 28px;
+  }
+}
+.search .search__container .search__background {
+  background-color: #96bece;
+  height: 50%;
+  width: 80%;
+  margin-left: auto;
+}
+.search .search__container .search__scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 54px;
+  left: -32px;
+  flex-direction: row-reverse;
+}
+.search .search__container .search__scroll-down div {
+  margin: 12px;
+}
+.search .search__container .search__scroll-down img {
+  transform: rotate(90deg);
+}/*# sourceMappingURL=style.css.map */
