@@ -147,6 +147,7 @@ nav.header__navigation-links a:nth-child(5) {
   
     @include flex-layout;
     flex-direction: column;
+    margin-top: 80px;
     padding: 0 24px;
    
    
@@ -259,8 +260,9 @@ nav.header__navigation-links a:nth-child(5) {
 
             button {
                 background: $primary;
+                
                 padding: 18px 18px 16px;
-                font-weight: 500;
+                font-weight: 600;
                 border-top-right-radius: $border-radius;
                 border-bottom-right-radius: $border-radius;
                 @media (min-width: $tablet) {
@@ -272,11 +274,28 @@ nav.header__navigation-links a:nth-child(5) {
                 }    
             }
         }
+
+        .search__search {
+            position: relative;
+            @include flex-layout(flex-start, center);
+            img {
+                position: absolute;
+                left: 10px;
+            }
+        }
+
         .search__background {
             background-color: $secondary;
             height: 50%;
             width: 80%;
             margin-left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            @media (min-width: $desktop) {
+                justify-content: flex-end;
+                align-items: flex-end;  
+            }
         }
         .search__scroll-down {
             @include flex-layout;
@@ -295,4 +314,396 @@ nav.header__navigation-links a:nth-child(5) {
         
     }
 }
+
+.search__contacts {
+    display: flex;
+    flex-direction: column;
+    background: #ffcc01;
+    @media (min-width: $desktop) {
+        flex-direction: row;
+    }
+    .search__contact {
+        padding: 26px 50px 28px 50px;
+        font-weight: bold;
+    }
+}
+
+//-----------------------Appartments-rent korteles--------------------------------------
+
+.appartments-background {
+    background: #f6f5f4;
+    padding-bottom: 80px;
+}
+
+.wrapper {
+    margin-top: 58px;
+    @include flex-layout(flex-start, center);
+}
+
+.rent {
+    background: #f6f5f4;
+    padding-top: 40px;
+
+    button {
+        background: white;
+        padding: 30px 34px 28px;
+        font-weight: 600;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 40px;
+      letter-spacing: -1px;
+        
+    }
+    .search__search {
+        margin-right: 30px;
+        position: relative;
+        @include flex-layout(flex-start, center);
+        
+        img {
+            position: absolute;
+            left: 8px;
+        }
+
+        input {
+            padding: 18px 18px 17px;
+            border: none;
+            @media (min-width: $desktop) {
+            padding: 30px 34px 28px;
+             }
+        }
+
+        button {
+            background: $primary;
+            padding: 18px 18px 16px;
+            font-weight: 600;
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+            @media (min-width: $tablet) {
+            padding: 18px 34px 16px;
+            }
+
+            @media (min-width: $desktop) {
+            padding: 30px 34px 28px;
+            }    
+        }
+    }
+   
+    
+}
+
+
+
+.rent__grid{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          @media (min-width: $desktop) {     
+            grid-template-columns: repeat(3, 1fr);
+          }
+}
+
+.rent__card {
+  
+    margin-top: 38px;
+    filter: drop-shadow(0px 2px 12px rgba(23, 44, 51, 0.15));
+
+    .rent__card-image {
+        height: 380px;
+        background: $secondary;
+    }
+    
+    .rent__card-background {
+        width: 380px;
+        padding-left: 20px;
+        padding-top: 28px;
+        h5 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .rent__card-footer {
+            @include flex-layout(space-between, center);
+            padding-right: 40px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            ul {
+                @include flex-layout(flex-start, center);
+                li {
+                    @include flex-layout(flex-start, center); 
+                }
+            }
+            small {
+                font-size: 18px;
+                color: $primary;
+                font-weight: 600;
+            }
+            span {
+                font-size: 13px;
+                color: #919eb1;
+            }
+        } 
+    }
+}
+
+//-------------------How it works------------------
+    
+.help {
+    padding: 54px;
+
+}
+
+.help__heading{
+    width: 73%;
+    @media (min-width: $tablet){
+        width: 53%;
+    }
+    @media (min-width: $desktop) {
+        width: 33%;
+    }
+
+    h2{
+        font-size: 40px;
+        letter-spacing: -1px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: 30px;
+        line-height: 30px;
+    }
+}
+
+.help__card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    @media (min-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    
+    @media (min-width: $desktop) {     
+        grid-template-columns: repeat(3, 1fr);
+        
+        margin-top: 30px;
+      }
+    .help__card{
+        padding: 140px 44px 50px;
+        filter: drop-shadow(0px 2px 12px rgba(23, 44, 51, 0.15));
+        position: relative;
+        overflow: hidden;
+        margin-top: 49px;
+        box-shadow: 0px 2px 12px rgb(23 44 51 / 15%);
+
+        &:hover {
+            background: $primary;
+        }
+        
+        .help__card-number {
+            font-size: 154px;
+            font-weight: 600;
+            position: absolute;
+            left: -40px;
+            top: -59px;
+            
+                     
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        p {
+            font-size: 13px;
+            line-height: 30px;
+            padding: 28px;
+      
+            
+        }
+
+        a {
+            
+            margin-left: 28;
+            padding-bottom: 14;
+            font-weight: 600;
+            border-bottom: 3px solid black;
+        }
+    }
+}
+
+//------------------Services-------------
+
+.services {
+    padding: 54px;
+
+}
+
+.services__heading{
+    width: 73%;
+    margin-bottom: 22px;
+    @media (min-width: $tablet){
+        width: 53%;
+        margin-bottom: 42px;
+    }
+    @media (min-width: $desktop) {
+        width: 33%;
+        margin-bottom: 62px;
+    }
+
+    h2{
+        font-size: 40px;
+        letter-spacing: -1px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: 30px;
+        line-height: 30px;
+    }
+}
+
+.services__grid{
+   
+    .services__card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        @media (min-width: $desktop) {
+        grid-template-columns: repeat(2, 1fr);
+        }
+
+    .services__card-image {
+        margin-bottom: 30px;
+        height: 300px;
+        object-fit: cover;
+        @media (min-width: $tablet){
+        height: 530px;
+        width: 100%;
+        background: $secondary;
+        
+        }
+    }
+    
+    .services__card-background {
+        width: 380px;
+        @media (min-width: $tablet) {
+        padding-left: 60px;}
+        
+        h4 {
+            font-size: 25px;
+            letter-spacing: -1px;
+            line-height: 50px;
+            font-weight: 600;
+        }
+
+        p {
+            width: 442px;
+            height: 126px;
+            font-size: 13px;
+            line-height: 30px;
+        }
+    }    
+}
+}
+
+//-----------------------------Agents-------------------------
+
+.agents-background {
+    background: #f6f5f4;
+    padding-bottom: 80px;
+}
+
+.agents{
+    background: #f6f5f4;
+
+}
+
+.agents__heading {
+    padding-top: 60px;   
+        width: 73%;
+        margin-bottom: 22px;
+        @media (min-width: $tablet){
+            width: 53%;
+            margin-bottom: 42px;
+        }
+        @media (min-width: $desktop) {
+            width: 33%;
+            margin-bottom: 62px;
+        }
+    
+        h2{
+            font-size: 40px;
+            letter-spacing: -1px;
+            line-height: 50px;
+            font-weight: 600;
+        }
+    
+        p {
+            margin-top: 30px;
+            line-height: 30px;
+        }
+    
+    
+}
+
+.agents__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: $desktop) {     
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.agents__card {
+  
+    margin-top: 38px;
+    filter: drop-shadow(0px 2px 12px rgba(23, 44, 51, 0.15));
+
+    .agents__card-image {
+        height: 380px;
+        background: #cdccce;
+    }
+    
+    .agents__card-text {
+        width: 380px;
+        padding-left: 20px;
+        padding-top: 28px;
+        h5 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .agents__card-footer {
+            @include flex-layout(space-between, center);
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            ul {
+                @include flex-layout(flex-start, center);
+                li {
+                    @include flex-layout(flex-start, center); 
+                }
+            }
+            small {
+                font-size: 15px;
+                color: $primary;
+                font-weight: 600;
+            }
+            span {
+                font-size: 13px;
+                color: #919eb1;
+            }
+        } 
+    }
+}
+
+//----------------------------Add-----------------------------
+
+
+
+
+
 
