@@ -12,17 +12,37 @@
 </head>
 
 <body>
+
     <div class="container">
 
 
         <div class=" row m-3 justify-content-center">
 
-            <button onclick="spausk()" class="btn btn-lg btn-warning mb-4">Stone</button>
-            <button onclick="spausk()" class="btn btn-lg btn-warning mb-4">Scissors</button>
-            <button onclick="spausk()" class="btn btn-lg btn-warning">Paper</button>
+            <button onclick="spausk(1)" class="btn btn-lg btn-warning mb-4">1. Stone</button>
+            <button onclick="spausk(2)" class="btn btn-lg btn-warning mb-4">2. Scissors</button>
+            <button onclick="spausk(3)" class="btn btn-lg btn-warning">3. Paper</button>
         </div>
 
+        <p id="ats"></p>
+
     </div>
+
+    <section class="row">
+        <textarea id="text" class="form-control"></textarea>
+        <button onclick="big()" class="col btn btn-primary">Change to Uppercase</button>
+        <button onclick="ilgis()" class="col btn btn-primary">Koks eilutes ilgis</button>
+        <button onclick="pariskink()" class="col btn btn-primary">Ieskok teksta ir pariskink ji</button>
+        <div id="lorem" class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam aut
+            consequuntur ad consectetur, neque excepturi porro? Quibusdam modi autem ipsam quasi aspernatur. Fuga at
+            deserunt, amet illum beatae velit.</div>
+
+        <div class="row">
+            <input id="input1" class="form-control">
+            <input id="input2" class="form-control">
+            <button onlick="sujungti()">Sujungti teksta</button>
+
+        </div>
+    </section>
 </body>
 <script src="./main.js"></script>
 
