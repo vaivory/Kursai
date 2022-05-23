@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalStorage praktika 2022-05-11</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <h3 class="ms-3">Finansai:</h3>
+  <div id="container">
+    <div class="input-group m-3">
+      <span class="input-group-text">Ivesk prekes pavadinima</span>
+      <input type="text" id="name" class="form-control">
+    </div>
+
+    <div class="input-group m-3">
+      <span class="input-group-text">Ivesk prekes kieki</span>
+      <input type="number" id="amount" class="form-control">
+    </div>
+  </div>
+  <button type="button" id="add" class="btn btn-secondary ms-3">Prideti i duomenu baze</button>
+
+  <div class="m-3">
+    <table id="tableList" class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th id="abc">Pavadinimas</th>
+          <th id="num123">Kiekis</th>
+          <th>Data</th>
+          <th>Mygtukai</th>
+        </tr>
+      </thead>
+      <tbody id="table">
+        <tr>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+
+
+
+</body>
+
+<script src="./redovisning.js" type="module"></script>
+
+</html>
